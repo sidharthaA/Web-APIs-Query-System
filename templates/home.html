@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API details</title>
+</head>
+<body>
+<h3><center>API details</center></h3><br>
+{% for data in x %}
+{% for key, value in data.items() %}
+<b>{{ key }}</b><br>
+<i> {{ value}}</i><br>
+{% endfor %}
+-----------------------------------------------------------------------------------------<br>
+{% endfor %}
+</body>
+</html>

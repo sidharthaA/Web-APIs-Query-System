@@ -1,0 +1,98 @@
+<html>
+
+<title> Programmable Web</title>
+
+<body>
+	<div class = "form1">
+		FORM FOR API DATA <br><br>
+		<form method="post" action="{{ url_for("query1")}}">
+			<div class="one">
+				<label for="year"> Enter updated year </label>
+			    <input type="text" name="year">
+		    </div>
+		    <div class="one">
+				<label for="pro"> Enter protocols </label>
+			    <input type="text" name="pro">
+		    </div>
+			<div class="one">
+				<label for="cat"> Enter category </label>
+			    <input type="text" name="cat">
+		    </div>
+		    <div class="one">
+				<label for="rateg"> Enter rating greater than </label>
+			    <input type="text" name="rateg">
+			    <label for="ratel"> Enter rating lesser than </label>
+			    <input type="text" name="ratel">
+			    
+		    </div>
+		   <b>OR</b>
+		    <div class="one">
+				<label for="rate"> Enter rating equal to </label>
+			    <input type="text" name="rate">
+		    </div>
+
+
+		    <div class="one">
+				<label for="tag"> Enter tags </label>
+			    <input type="text" name="tag" multpile size="20">
+		    </div><br>
+		    <div class="one">
+			    <input type="submit" value = "Get Results">
+		    </div>
+		</form>
+	</div>
+
+	<div class = "form2">
+		FORM FOR MASHUP DATA<br><br>
+		<form method="post", action="{{ url_for("query2")}}">
+			<div class="one">
+				<label for="year"> Enter updated year </label>
+			    <input type="text" name="year">
+		    </div>
+		    <div class="one">
+				<label for="api"> Enter used Apis </label>
+			    <input type="text" name="api">
+		    </div>
+
+		    <div class="one">
+				<label for="tag"> Enter tags </label>
+			    <input type="text" name="tag" multiple size = "15">
+		    </div><br>
+		    <div class="one">
+			    <input type="submit" value = "Get Results">
+		    </div>
+		</form>
+	</div>
+
+	<div class = "form3">
+		KEYWORD FOR API DATA<br><br>
+		<form method="post", action="{{ url_for("query3")}}">
+			<div class="one">
+				<label for="key"> Enter keywords for api data </label>
+			    <input type="text" name="key" multiple = "15" required>
+		    </div>
+		    <div class="one">
+			    <input type="submit" value = "Get Results">
+		    </div>
+		</form>
+	</div>
+
+	<div class = "form4">
+		KEYWORD FOR MASHUP DATA<br><br>
+		<form method="post", action="{{ url_for("query4")}}">
+			<div class="one">
+				<label for="key"> Enter keywords for mashup data </label>
+			    <input type="text" name="key" multiple = "15" required>
+		    </div>
+		    <div class="one">
+			    <input type="submit" value = "Get Results">
+		    </div>
+		</form>
+	</div>
+
+
+
+
+
+</body>
+</html>
